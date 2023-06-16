@@ -7,20 +7,31 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/">Home </a>
+        <a class="nav-link" routerLink="/">Home</a>
       </li>
+
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
           Produtos
         </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink='/produtos'>Listar produtos</a>
-          <a class="dropdown-item" routerLink='/produtos/cadastrar'>Cadastrar produtos</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/produtos">Listar Produtos</a>
+          <a class="dropdown-item" routerLink="/produtos/cadastrar">Cadastrar Produtos</a>
+
+        </div>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Receitas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/receitas">Listar Receitas</a>
+          <a class="dropdown-item" routerLink="/receitas/cadastrar">Cadastrar Receitas</a>
+
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sair</button>
-    </form>
   </div>
 </nav>
